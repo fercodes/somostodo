@@ -1,2 +1,2 @@
 # somostodo
-Website with impressive animation "look through a window" for a photographer.
+Website with impressive effect "look through a window" when scrolling down. For a photographer's portfolio.
