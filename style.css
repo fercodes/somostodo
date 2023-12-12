@@ -88,9 +88,170 @@ a{
   width: 100vw;
 }
 
-
 .img{
   object-fit: cover;
   height: 100%;
   width: 100%;
+}
+
+.section{
+  background-color: #141414;
+  padding: 7rem;
+}
+
+.boxes-container{
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+}
+
+.columns{
+  display: flex;
+  gap: 1.5rem;
+  position: relative;
+}
+
+.col img{
+  object-fit: cover;
+}
+
+.col-1{
+  display: flex;
+  gap: 1.5rem;
+  flex: 5;
+}
+
+.box1 .col-1 img:first-child{
+  width: 150px;
+  height: 180px;
+  transform: translateY(-30px);
+}
+
+.box1 .col-1 img:nth-child(2){
+  width: 380px;
+  height: 430px;
+}
+
+.col-3{
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+  flex: 4;
+}
+
+.box1 .col-3 img:first-child{
+  width: 320px;
+  height: 170px;
+}
+
+.box1 .col-3 img:nth-child(2){
+  width: 150px;
+}
+
+.box1 .col-3 img:nth-child(3){
+  width: 200px;
+  height: 200px;
+}
+
+.col-2{
+  margin: auto;
+  flex: 1.5;
+}
+
+.col-2 h1{
+  font-family: w;
+  font-size: 100px;
+  text-transform: capitalize;
+  position: absolute;
+  top: 50px;
+  left: 47%;
+  z-index: 100;
+}
+
+.box1 .col-2 h1{
+  top: 0;
+}
+
+.col-2 span{
+  font-size: 8px;
+  text-transform: uppercase;
+  letter-spacing:3px;
+  opacity: .7;
+}
+
+.line{
+  height: 1px;
+  width: 50px;
+  background-color: rgba(255, 255, 255, .1);
+  margin: 2rem 0;
+}
+
+.text-box p{
+  font-size: 12px;
+  line-height: 1.9;
+  padding-bottom: 1rem;
+  opacity: .7; 
+}
+
+.box2 .col-1 img:first-child{
+  width: 200px;
+  height: 250px;
+  transform: translateY(200px);
+}
+
+.box2 .col-1 img:nth-child(2){
+  height: 380px;
+  width: 300px;
+}
+
+.box2 .col-3 img:nth-child(1){
+  height: 300px;
+  width: 220px;
+}
+
+.box2 .col-3 img:nth-child(2){
+  width: 180px;
+  height: 200px;
+  align-self: flex-end;
+}
+
+.box2 .col-3 img:nth-child(3){
+  width: 380px;
+  height: 200px;
+  transform: translateX(80px);
+}
+
+.box3 .col-1{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box3 .col-1 img:nth-child(1){
+  width: 200px;
+  height: 280px;
+  transform: translateX(30px);
+}
+
+.box3 .col-1 img:nth-child(2){
+  width: 180px;
+  height: 200px;
+  margin-left: 80px;
+  align-self: center; 
+}
+
+.box3 .col-1 img:nth-child(3){
+  width: 280px;
+  height: 180px; 
+}
+
+.box3 .col-1 img:nth-child(4){
+  width: 250px;
+  height: 180px;
+  transform: translateY(-30px);
+}
+
+.box3 .col-3 img{
+  width: 400px;
+  height: auto;
 }
