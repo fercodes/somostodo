@@ -75,10 +75,22 @@ a{
   text-transform: uppercase;
 }
 
+.wrapper{
+  display: flex;
+}
+
+section{
+  width: 100vw;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
 .video-section video{
   height: 100vh;
   width: 100vw;
   object-fit: cover;
+  z-index: -2;
+  position: relative;
 }
 
 .img-container{
@@ -254,4 +266,127 @@ a{
 .box3 .col-3 img{
   width: 400px;
   height: auto;
+}
+
+footer{
+  background-color: #141414;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 3rem;
+  border-top: 1px solid rgba(255, 255, 255, .1);
+}
+
+.text-content{
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title{
+  font-family: w;
+  width: 450px;
+  position: relative;
+  height: 110px;
+  overflow: hidden;
+}
+
+.bg{
+  font-size: 100px;
+}
+
+.sm{
+  font-size: 35px;
+  height: 40px;
+}
+
+.left{
+  left: -25%;
+}
+
+.right{
+  top: 50px;
+  left: 75%;
+}
+
+.title span{
+  position: absolute;
+}
+
+.n{
+  z-index: -1; 
+}
+
+.text-content p{
+  transform: translateY(150px);
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 12px;
+  font-weight: 300;
+}
+
+.v_container{
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  /* opacity: 0; */
+}
+
+.left-side{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 4rem;
+  gap: 5rem;
+}
+
+.tv{
+  font-family: w;
+  display: flex;
+  text-transform: capitalize;
+}
+
+.bottom{
+  transform: translateY(70px);
+}
+
+.text-container{
+  max-width: 260px;
+}
+
+.text-container p{
+  padding-bottom: 1rem;
+  line-height: 1.4;
+  opacity: .8;
+}
+
+.right-side{
+  /* background-color: blue; */
+  margin: auto;
+  width: 150px;
+  height: 150px;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  border-color: rgba(255, 255, 255, .6);
+  border-radius: 50%;
+  position: relative;
+}
+
+.right-side p{
+  position: absolute;
+  top: 45%;
+  left: -15%;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.fa-arrow-right-long{
+  transform: translateX(20px);
 }
